@@ -30,3 +30,42 @@ header h1 {
   color: #777;
   transform: rotate(2deg);
 }
+
+.task-list{
+  max-width: 650px;
+  margin: 20px auto;
+}
+.task{
+  padding: 6px 20px;
+  background: #fff;
+  margin-top: 20px;
+  border-radius:5px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, .05) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task h3 .task .icone {
+  display: inline-block;
+}
+
+.task .icone{
+  text-align: right;
+}
+
+.filter{
+  width: 650px;
+  margin:10px auto;
+  text-align: right;
+}
+
+.filter button{
+  display: inline-block;
+  margin-left: 10px;
+  background: #fff;
+  border: 2px solid #5555;
+  border-radius: 5px;
+  padding: 2px 4px;
+  cursor: pointer;
+  
+}
