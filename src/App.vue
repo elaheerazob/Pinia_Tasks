@@ -8,6 +8,11 @@
 
     </header>
 
+    <!-- new task add form -->
+    <div class="new-task-form">
+      <TaskForm/>
+    </div>
+
 <!-- Filter  -->
     <nav class="filter">
       <button @click="filter ='all'">All</button>
@@ -36,6 +41,7 @@
 import { ref } from 'vue';
 import TaskDetails from './components/TaskDetails.vue';
 import {useTaskStore} from './sotres/TaskStore';
+import TaskForm from './components/TaskForm.vue';
 
   export default {
     setup() {
@@ -43,7 +49,7 @@ import {useTaskStore} from './sotres/TaskStore';
         const filter =ref("all")
         return { taskStore,filter };
     },
-    components: { TaskDetails }
+    components: { TaskDetails, TaskForm }
 }
 </script>
 
