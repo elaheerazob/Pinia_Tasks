@@ -53,6 +53,16 @@ header h1 {
   text-align: right;
 }
 
+
+.task i{
+  margin-left: 6px;
+  cursor: pointer;
+  color: #bbb;
+}
+.task i.active{
+  color: #ff005d;
+}
+
 .filter{
   width: 650px;
   margin:10px auto;
@@ -68,4 +78,31 @@ header h1 {
   padding: 2px 4px;
   cursor: pointer;
   
+}
+
+/* New tsk form */
+
+.new-task-form{
+  background: #e7d7d7;
+  padding: 20px 0;
+}
+form{
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+form button{
+  background: #ffd859;
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form input{
+  border: 0px ;
+  padding: 10px;
+  border-radius: 6px;
+  color: #555;
 }
